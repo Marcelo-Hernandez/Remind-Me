@@ -1,0 +1,44 @@
+
+.default-folder-container {
+    width: full;
+    height: 40vh;
+    padding: 8%;
+    
+}
+
+.folder-grid {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.default-folder-card {
+    background-color: inherit;
+    padding: 5%;
+    border-radius: 5%;
+    border-color: #242425;
+    border-width: 1px;
+}
+
+
+
+ @media only screen and (min-width: 901px) and (max-width: 1400px) {
+   
+  }
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+
+  
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1800px) {
+
+ 
+}
+
+@media only screen and (min-width: 1800px) {
+    
+    .default-folder-container {
+        padding: 6%;   
+        padding-top:10%;
+    }
+} 

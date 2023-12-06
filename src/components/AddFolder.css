@@ -1,0 +1,100 @@
+
+
+
+.slide-enter {
+    transform: scaleY(0);
+  }
+  
+  .slide-enter-active {
+    position: fixed;
+    padding: 1%;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    border-radius: 1%;
+    border: 1px;
+    transform: scaleY(1);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: bottom;
+  }
+  
+  .slide-exit {
+    transform: scaleY(1);
+  }
+  
+  .slide-exit-active {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 1%;
+    transition: transform 0.2s ease-in-out, height .4s ease-in-out;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+
+.animate-add-folder {
+    position: fixed;
+    padding: 10%;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 98vh;
+    border: 1px;
+    border-radius: 5%;
+    border-color: white;
+    transform: scaleY(1);
+    background-color: #111113ed;
+    transform-origin: bottom;
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+
+    .slide-enter-active,
+    .slide-exit-active {
+      width: 100vw;
+    }
+  
+    .animate-add-folder {
+      width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1800px) {
+    .slide-enter-active,
+    .slide-exit-active {
+      width: 40vw;
+    }
+  
+    .animate-add-folder {
+      width: 40vw;
+    }
+    
+  }
+
+@media only screen and (min-width: 1400px) and (max-width: 1800px) {
+
+    .slide-enter-active,
+    .slide-exit-active {
+      width: 20vw;
+    }
+  
+    .animate-add-folder {
+      width: 20vw;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    
+    .slide-enter-active,
+    .slide-exit-active {
+      width: 30vw;
+    }
+  
+    .animate-add-folder {
+      width: 30vw;
+    }
+}

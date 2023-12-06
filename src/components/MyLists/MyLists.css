@@ -1,0 +1,63 @@
+
+.lists-column::-webkit-scrollbar {
+    width: 0px; 
+  }
+  
+
+
+.my-lists-container {
+    width:full;
+    height: 60vh;
+}
+
+.my-lists {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.lists-column {
+    width: full;
+    height: 45vh;
+    padding-top: 8%;
+    overflow: scroll;
+}
+
+.my-list-card {
+    display: flex;
+    height: 15%;
+    background-color: inherit;
+    box-shadow: inset 0 0 10px #171717;
+    border-radius: 5%;
+    align-items: center;
+    padding: 1%;
+    
+}
+
+ /* @media only screen and (min-width: 901px) and (max-width: 1200px) {
+
+    .my-lists-container {
+        width: 100%;
+        
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+
+    .my-lists-container {
+        width: 30%;   
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1800px) {
+
+    .my-lists-container {
+        width: 40%;   
+    }
+} */
+
+@media only screen and (min-width: 1800px) {
+    
+    .my-list-card {
+        height: 10%;   
+    }
+}
