@@ -1,8 +1,10 @@
-# React + Vite
+#Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="640" alt="Desktop-ToDo" src="https://github.com/Marcelo-Hernandez/Remind-Me/assets/111325080/536937de-3c9e-46be-833a-857fe1830cfd">
 
-Currently, two official plugins are available:
+<img width="250" alt="Mobile-ToDo" src="https://github.com/Marcelo-Hernandez/Remind-Me/assets/111325080/371ece29-f149-483c-bc9b-696d859799bd">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ToDo List:
+- Built using Vite, ReactJS, TailwindCSS
+- Create or delete folders containing to-do items
+- Add or delete list items corresponding to their folder
