@@ -33,28 +33,6 @@
     
 }
 
- /* @media only screen and (min-width: 901px) and (max-width: 1200px) {
-
-    .my-lists-container {
-        width: 100%;
-        
-    }
-}
-
-@media only screen and (min-width: 1201px) and (max-width: 1400px) {
-
-    .my-lists-container {
-        width: 30%;   
-    }
-}
-
-@media only screen and (min-width: 1400px) and (max-width: 1800px) {
-
-    .my-lists-container {
-        width: 40%;   
-    }
-} */
-
 @media only screen and (min-width: 1800px) {
     
     .my-list-card {

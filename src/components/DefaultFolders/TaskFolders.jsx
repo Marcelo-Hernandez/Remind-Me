@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTaskContext } from "../../services/TaskContext";
-import { v4 as uuidv4 } from "uuid";
-import { Card, Text, IconButton, Strong, Theme, Grid, Flex } from "@radix-ui/themes";
+import { Text, IconButton, Strong, Grid } from "@radix-ui/themes";
 import "./TaskFolders.css"
 
 export default function TaskFolders ({isAddFolderVisible}) {
@@ -23,7 +22,7 @@ console.log(state)
           <Grid columns="2" gap="2" className="w-[full] h-[full]">
             {defaultFolders.map((folder) => {
                 return (
-                    <div key={folder.id} className="default-folder-card"  onClick={() => setSelectedFolder(folder.id)}>
+                    <div key={folder.id} className="default-folder-card cursor-pointer"  onClick={() => setSelectedFolder(folder.id)}>
                            <div className="flex flex-row justify-between">
                                 <IconButton 
                                   radius="full" 

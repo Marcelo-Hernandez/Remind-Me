@@ -1,12 +1,10 @@
 import React, {useState, useEffect} from "react";
 import { CSSTransition } from "react-transition-group"
-import { TaskProvider } from "./services/TaskContext.jsx";
 import { useTaskContext } from "./services/TaskContext.jsx";
 import { Theme, Button } from "@radix-ui/themes"
 import FolderPage from "./pages/FolderPage"
 import TaskList from "./components/TaskList/TaskList.jsx";
 import TaskPage from "./pages/TaskPage"
-import AddFolder from "./components/AddFolder.jsx"
 import "./components/TaskList/TaskList.css"
 
 
@@ -22,10 +20,13 @@ function App() {
     if(state.setSelectedFolder !== null){
       setIsFolderOpen(true);
     }
+    else{
+      setIsFolderOpen(false);
+    }
   }, [state.setSelectedFolder]);
 
   const handleFolderClose = () => {
-    setIsFolderOpen(null)
+    setSelectedFolder(null);
   }
 
   useEffect(() => {
@@ -39,7 +40,6 @@ function App() {
     };
   }, []);
 
-  console.log(isFolderOpen)
 
   return (
      
@@ -55,7 +55,7 @@ function App() {
           > 
           <div className="animate-task-list">
             <div className="absolute right-10 bottom-9">
-              <Button radius="full" variant="ghost" size={2} onClick={()=>{setIsFolderOpen(false)}}>Done</Button>
+              <Button radius="full" variant="ghost" size={2} onClick={()=>{handleFolderClose()}}>Done</Button>
 
             </div>
             <TaskList/>

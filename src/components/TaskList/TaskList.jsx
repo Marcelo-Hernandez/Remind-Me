@@ -65,7 +65,6 @@ export default function TaskList() {
   const dropdownInputStyling = `default-dropdown-input-styles ${editTask ? "input-dropdown" : "input-drop-up"}`;
   const dropdownNotesStyling = `default-dropdown-notes-styles ${showNotes ? "dropdown" : "drop-up"}`;
 
-  console.log(showNotes);
 
   if (selectedFolderTasks.length === 0 && !editTask) {
     return (

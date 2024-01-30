@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Theme } from "@radix-ui/themes";
 import { CSSTransition } from "react-transition-group"
 import TaskFolders from "../components/DefaultFolders/TaskFolders";
 import MyLists from "../components/MyLists/MyLists";

@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
-import AddFolder from "../AddFolder.jsx";
-import { CSSTransition } from "react-transition-group";
 import { useTaskContext } from "../../services/TaskContext";
-import { Link } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid"
-import { Text, Strong, Card, Button, Flex, IconButton } from "@radix-ui/themes";
+import { Text, Strong, Button, Flex } from "@radix-ui/themes";
 import { PlusCircledIcon, Cross2Icon } from "@radix-ui/react-icons";
 import "./MyLists.css"
 
@@ -37,7 +33,7 @@ useEffect(() => {
     console.log("TaskList rendered or state changed");
   }, [state]);
   
-  console.log("Selected Folder", state.setSelectedFolder)
+ 
     return(
         <div className={myListsContainer}>
             <div className="my-lists">
@@ -48,7 +44,7 @@ useEffect(() => {
                 <div className="lists-column">
                     {myListFolders.map((folder) => {
                         return (         
-                          <div className="my-list-card" key={folder.id} onClick={() => setFolderId(folder.id)}>
+                          <div className="my-list-card cursor-pointer" key={folder.id} onClick={() => setFolderId(folder.id)}>
                               
                               
                                 <Cross2Icon onClick={() => {handleDelete(folder.id)}}/>

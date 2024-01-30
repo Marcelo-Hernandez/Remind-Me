@@ -9,11 +9,9 @@ import { TaskProvider } from './services/TaskContext.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Theme appearance='dark'>
-    <TaskProvider>
-     <App/>
-
-    </TaskProvider>
+      <TaskProvider>
+       <App/>
+      </TaskProvider>
     </Theme>
-    
   </React.StrictMode>,
 )

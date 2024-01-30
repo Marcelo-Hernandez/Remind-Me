@@ -1,20 +1,14 @@
 import React, { useState } from "react";
-import { CSSTransition } from "react-transition-group"
-import { TaskProvider } from "../services/TaskContext";
 import { v4 as uuidv4 } from "uuid";
 import { useTaskContext } from "../services/TaskContext";
-import FolderPage from "../pages/FolderPage";
 import * as Form from '@radix-ui/react-form';
-import { Text, Button } from "@radix-ui/themes";
-import { Link, useNavigate } from "react-router-dom"
-import { color, motion } from "framer-motion";
+import { Button } from "@radix-ui/themes";
 
 import "./AddFolder.css"
 
 export default function AddFolder ({ onCancel }) {
   const { state, addFolder } = useTaskContext();
   
-  console.log(state)
   
 
   const [stagedForm, setStagedForm] = useState({
